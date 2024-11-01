@@ -44,7 +44,7 @@ const HomePage = () => {
       <Navbar />
       
       {/* Homepage */}
-      <div className="homepage pb-10">
+      <div className="homepage">
         <div className="container mx-auto px-4">
           <div className="hero lg:pt-32 pt-24 flex flex-col lg:flex-row items-center">
             <div className="box-title flex-1 mb-8 lg:mb-0 lg:ms-8">
@@ -108,7 +108,7 @@ const HomePage = () => {
               <a href="#" className="mt-4 inline-block bg-green-700 text-white px-6 py-3 mr-4 rounded-full">
                 Get started
               </a>    
-              <a href="#" className="mt-4 inline-block bg-green-700 text-white px-6 py-3 rounded-full">
+              <a href="#" className="mt-4 inline-block bg-white text-green-700 px-6 py-3 rounded-full">
                 Talk to sales
               </a>    
             </div>
@@ -414,103 +414,19 @@ const HomePage = () => {
       </div>
     </div>
 
-    {/* contact */}
-    <div className="min-h-screen mx-4 bg-slate-200 flex items-center justify-center">
-    <div className="max-w-1/2 mx-auto my-10 p-10 bg-slate-100 shadow-lg rounded-lg">
-      <h2 className="text-3xl text-green-600 font-bold mb-8 text-center">Contact Us</h2>
-      <form>
-        {/* First Name and Last Name */}
-        <div className="flex flex-wrap mb-6 -mx-3">
-          <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-            <label className="block text-gray-700 text-lg font-bold mb-2" htmlFor="firstName">
-              First Name
-            </label>
-            <input
-              type="text"
-              id="firstName"
-              className="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              placeholder="First Name"
-            />
-          </div>
-          <div className="w-full md:w-1/2 px-3">
-            <label className="block text-gray-700 text-lg font-bold mb-2" htmlFor="lastName">
-              Last Name
-            </label>
-            <input
-              type="text"
-              id="lastName"
-              className="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              placeholder="Last Name"
-            />
+    {/* Subscribe */}
+    <div className="subscribe">
+      <div className="container mx-auto px-4 w-full lg:h-[10rem] h-[16rem]">
+        <div className="box-title text-2xl font-bold flex justify-center text-center text-stone-800 mb-6">
+          <h2>Subscribe to our newslater</h2>
+        </div>
+        <div className="box-subscribe flex justify-center gap-3">
+          <input className="box-radius w-[23rem] p-2 rounded-full text-stone-800 bg-slate-50" placeholder="Enter your email"/>
+          <div className="box-button">
+            <button className="bg-green-600 p-2 rounded-full text-slate-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">Subscribe</button>
           </div>
         </div>
-
-        {/* Email and Phone Number */}
-        <div className="flex flex-wrap mb-6 -mx-3">
-          <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-            <label className="block text-gray-700 text-lg font-bold mb-2" htmlFor="email">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              className="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              placeholder="Email"
-            />
-          </div>
-          <div className="w-full md:w-1/2 px-3">
-            <label className="block text-gray-700 text-lg font-bold mb-2" htmlFor="phone">
-              Phone Number
-            </label>
-            <input
-              type="tel"
-              id="phone"
-              className="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              placeholder="Phone Number"
-            />
-          </div>
-        </div>
-        
-        {/* Choose a Topic */}
-        <div className="mb-6">
-          <label className="block text-gray-700 text-lg font-bold mb-2" htmlFor="topic">
-            Choose a Topic
-          </label>
-          <select
-            id="topic"
-            className="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          >
-            <option value="">Select a topic</option>
-            <option value="general">General Inquiry</option>
-            <option value="support">Support</option>
-            <option value="feedback">Feedback</option>
-          </select>
-        </div>
-        
-        {/* Message */}
-        <div className="mb-6">
-          <label className="block text-gray-700 text-lg font-bold mb-2" htmlFor="message">
-            Message
-          </label>
-          <textarea
-            id="message"
-            className="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            placeholder="Your message"
-            rows="6"
-          ></textarea>
-        </div>
-        
-        {/* Submit Button */}
-        <div className="flex items-center justify-center">
-          <button
-            type="submit"
-            className="bg-green-700 hover:bg-green-600 text-white font-bold py-3 px-6 rounded focus:outline-none focus:shadow-outline"
-          >
-            Send Message
-          </button>
-        </div>
-      </form>
-    </div>
+      </div>
     </div>
 
       {/* Footer Component */}

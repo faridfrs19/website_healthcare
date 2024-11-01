@@ -4,13 +4,15 @@ import React from 'react';
 // Import react router dom
 import { Routes, Route } from "react-router-dom";
 
-import Home from "../pages/HomePage.jsx"
+import ServicePage from '../pages/ServicePage.jsx';
+import HomePage from '../pages/HomePage.jsx';
 
 export default function RoutesIndex() {
     return (
         <Routes>
             {/* route "/" */}
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/service" element={<ServicePage />} />
         </Routes>
     );
 }

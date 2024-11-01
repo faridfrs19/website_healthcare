@@ -2,7 +2,7 @@ import logo from '../assets/logo.png';
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-200 text-green-600 py-8 border-top-shadow">
+    <footer className="bg-cyan-900 text-green-600 py-8 border-top-shadow">
       <div className="container mx-auto px-10">
         <div className="flex flex-wrap justify-between">
           {/* Logo and Description */}
@@ -16,9 +16,8 @@ const Footer = () => {
           {/* Navigation Links */}
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
             <h2 className="text-lg font-semibold mb-2">Navigation</h2>
-            <ul>
+            <ul className='flex flex-col gap-2'>
               <li><a href="#" className="text-gray-400 hover:text-white">Home</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">About</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white">Services</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white">Contact</a></li>
             </ul>
@@ -27,11 +26,11 @@ const Footer = () => {
           {/* Social Media Links */}
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
             <h2 className="text-lg font-semibold mb-2">Follow Us</h2>
-            <ul className="flex space-x-4">
-              <li><a href="#" className="text-gray-400 hover:text-white">Facebook</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Twitter</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Instagram</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">LinkedIn</a></li>
+            <ul className="flex flex-col gap-2">
+              <li><a href="#" className="text-gray-400 hover:text-white"><i className="fa-brands fa-facebook pe-2"></i>Facebook</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white"><i className="fa-brands fa-twitter pe-2"></i>Twitter</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white"><i className="fa-brands fa-instagram pe-2"></i>Instagram</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white"><i className="fa-brands fa-linkedin pe-2"></i>LinkedIn</a></li>
             </ul>
           </div>
         </div>

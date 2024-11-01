@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../assets/logo.png';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -77,30 +78,24 @@ const Navbar = () => {
             </div>
             <div className="hidden sm:ml-6 sm:flex sm:flex-1 sm:justify-center">
               <div className="flex space-x-4 font-semibold">
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   className="rounded-md px-3 py-2 text-sm text-slate-800 hover:bg-gray-500 hover:text-white"
                 >
                   Home
-                </a>
-                <a
-                  href="#"
-                  className="rounded-md px-3 py-2 text-sm text-slate-800 hover:bg-gray-500 hover:text-white"
-                >
-                  About Us
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  to="/service"
                   className="rounded-md px-3 py-2 text-sm text-slate-800 hover:bg-gray-500 hover:text-white"
                 >
                   Service
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  to="/contact-us"
                   className="rounded-md px-3 py-2 text-sm text-slate-800 hover:bg-gray-500 hover:text-white"
                 >
                   Contact Us
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -116,31 +111,25 @@ const Navbar = () => {
       </div>
       <div className={`sm:hidden ${mobileMenuOpen ? 'block' : 'hidden'} px-2 pb-2`} id="mobile-menu">
         <div className="space-y-1 px-2 pb-3 pt-2 bg-slate-100 rounded-md shadow-lg">
-          <a
-            href="#"
+          <Link
+            to="/"
             className="block rounded-md px-3 py-2 text-base font-semibold text-slate-800 hover:bg-gray-500 hover:text-white"
             aria-current="page"
           >
             Home
-          </a>
-          <a
-            href="#"
-            className="block rounded-md px-3 py-2 text-base font-semibold text-slate-800 hover:bg-gray-500 hover:text-white"
-          >
-            About Us
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/service"
             className="block rounded-md px-3 py-2 text-base font-semibold text-slate-800 hover:bg-gray-500 hover:text-white"
           >
             Service
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/contact"
             className="block rounded-md px-3 py-2 text-base font-semibold text-slate-800 hover:bg-gray-500 hover:text-white"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

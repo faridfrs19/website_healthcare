@@ -105,7 +105,7 @@ const ServicePage = () => {
             </div>
 
             {/* Find doctor */}
-            <div className="number lg:h-[200px]">
+            <div className="find lg:h-[200px]">
                 <div className="container mx-auto px-4 lg:pt-10 pt-8">
                     <div className="bg-white mx-4 p-6 rounded-lg shadow-lg">
                         <div className="text-start ms-3">
@@ -223,8 +223,8 @@ const ServicePage = () => {
                 <div className="container mx-auto px-4">
                 <div className="service-konten pt-20">
                     <div className="box-title text-center">
-                    <h1 className="text-2xl font-bold text-green-600">Leading Medicine</h1>
-                    <p className="my-4">Problems trying to resolve the conflict between the two major realms of <br /> Classical physics: Newtonian mechanics.</p>
+                        <h1 className="text-2xl font-bold text-green-600">Leading Medicine</h1>
+                        <p className="my-4">Problems trying to resolve the conflict between the two major realms of <br /> Classical physics: Newtonian mechanics.</p>
                     </div>
                     <div className="horizontal-scroll">
                         <div className="box-testi flex gap-8 lg:mx-8 mx-2 mt-10">
@@ -371,6 +371,65 @@ const ServicePage = () => {
                         </div>
                     </div>
                 </div>
+                </div>
+            </div>
+
+            {/* FAQ */}
+            <div className="faq pb-12">
+                <div className="container mx-auto px-4">
+                    <div className="box-title text-center mb-8">
+                        <h1 className="text-2xl font-bold text-green-600">FAQ</h1>
+                        <p className="my-4">
+                            Problems trying to resolve the conflict between <br />
+                            the two major realms of Classical physics: Newtonian mechanics
+                        </p>
+                    </div>
+                    {/* Box FAQ */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-8">
+                        {/* Box 1 */}
+                        <div className="bg-white p-4 rounded-lg shadow-md">
+                            <h2 className="font-semibold mb-2">What is the return policy?</h2>
+                            <p className="text-gray-700 text-sm">
+                                Our return policy lasts 30 days. If 30 days have gone by since your purchase,
+                                unfortunately, we can’t offer you a refund or exchange.
+                            </p>
+                        </div>
+                        {/* Box 2 */}
+                        <div className="bg-white p-4 rounded-lg shadow-md">
+                            <h2 className="font-semibold mb-2">How to track my order?</h2>
+                            <p className="text-gray-700 text-sm">
+                                You can track your order using the tracking link provided in your confirmation email.
+                            </p>
+                        </div>
+                        {/* Box 3 */}
+                        <div className="bg-white p-4 rounded-lg shadow-md">
+                            <h2 className="font-semibold mb-2">What payment methods are accepted?</h2>
+                            <p className="text-gray-700 text-sm">
+                                We accept various payment methods including credit cards, PayPal, and bank transfers.
+                            </p>
+                        </div>
+                        {/* Box 4 */}
+                        <div className="bg-white p-4 rounded-lg shadow-md">
+                            <h2 className="font-semibold mb-2">How to change my account details?</h2>
+                            <p className="text-gray-700 text-sm">
+                                You can update your account details in the account settings section of our website.
+                            </p>
+                        </div>
+                        {/* Box 5 */}
+                        <div className="bg-white p-4 rounded-lg shadow-md">
+                            <h2 className="font-semibold mb-2">Is there a warranty on products?</h2>
+                            <p className="text-gray-700 text-sm">
+                                Yes, we offer a warranty on most of our products. Please check the warranty policy for specific items.
+                            </p>
+                        </div>
+                        {/* Box 6 */}
+                        <div className="bg-white p-4 rounded-lg shadow-md">
+                            <h2 className="font-semibold mb-2">How can I contact customer service?</h2>
+                            <p className="text-gray-700 text-sm">
+                                You can reach our customer service through the contact form on our website or by calling our hotline.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 

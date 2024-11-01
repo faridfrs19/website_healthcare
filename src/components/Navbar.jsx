@@ -91,7 +91,7 @@ const Navbar = () => {
                   Service
                 </Link>
                 <Link
-                  to="/contact-us"
+                  to="/contact"
                   className="rounded-md px-3 py-2 text-sm text-slate-800 hover:bg-gray-500 hover:text-white"
                 >
                   Contact Us
@@ -100,12 +100,14 @@ const Navbar = () => {
             </div>
           </div>
           <div className="absolute sm:mr-6 inset-y-0 right-0 gap-2 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <button
-              type="button"
-              className="relative font-bold font-mono rounded bg-green-700 p-1 px-6 text-slate-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-            >
-              Log In
-            </button>
+            <Link to="/login">
+              <button
+                type="button"
+                className="relative font-bold font-mono rounded bg-green-700 p-1 px-6 text-slate-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+              >
+                Log In
+              </button>
+            </Link>
           </div>
         </div>
       </div>

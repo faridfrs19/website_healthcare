@@ -1,4 +1,4 @@
-# 🏥 Healthcare Responsive Web - Slicing Design
+# 🏥 Healthcare Web
 
 A modern, clean, and fully responsive Healthcare Landing Page. Proyek ini adalah hasil **slicing design** dari Figma ke kode fungsional menggunakan **React.js** dan **Tailwind CSS**.
 

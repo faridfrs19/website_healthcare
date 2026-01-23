@@ -27,5 +27,5 @@ Proyek ini menggunakan kombinasi teknologi modern:
 
 1. **Clone Repositori**
    ```bash
-   git clone [https://github.com/faridfrs19/responsiveweb.git](https://github.com/faridfrs19/responsiveweb.git)
-   cd responsiveweb
+   git clone [https://github.com/faridfrs19/Website_Healthcare.git](https://github.com/faridfrs19/Website_Healthcare.git)
+   cd Website_Healthcare
